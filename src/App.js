@@ -1,17 +1,19 @@
-import './App.css';
-import { Container, Typography } from '@mui/material';
-import Header from './components/header/Header';
-import Footer from './components/footer/Footer';
+import "./App.css";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Home, FundraisingProducts, Pricing, About, OurClients, GetStarted } from './pages/index';
 
 function App() {
   return (
-    <>
-    <Header />
-    <Container sx={{bgcolor: "#212121"}}>
-      <Typography>Fundraising Solutions</Typography>
-    </Container>
-    <Footer />
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="" element={<Home />} />
+        <Route path="/fundraising-products" element={<FundraisingProducts />} />
+        <Route path="/pricing" element={<Pricing />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/our-clients" element={<OurClients />} />
+        <Route path="/get-started" element={<GetStarted />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
