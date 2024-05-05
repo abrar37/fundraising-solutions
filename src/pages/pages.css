@@ -1,0 +1,30 @@
+.banner-section{
+    background-image: url(./../assets/banner-bg.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.banner-left{
+    flex: 1;
+    padding-top: 96px;
+}
+.banner-left p{
+    padding-top: 20px;
+    padding-bottom: 22px;
+}
+.banner-right{
+    flex: 1;
+    padding: 41px 0 0 49px;
+    background-image: url(./../assets/card-bg.png);
+}
+.banner-card{
+    padding: 50px;
+    border-radius: 48px;
+    background-color: #2B292A;
+    color: #fff;
+}
+.banner-card h2{
+    font-size: 32px;
+    padding-top: 42px;
+    padding-bottom: 172px;
+}
