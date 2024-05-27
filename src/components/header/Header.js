@@ -1,5 +1,4 @@
 import logo from "../../assets/logo-dark.svg";
-import { Box, Button, Container } from "@mui/material";
 import React from "react";
 import { NavLink, Link as RouterLink } from "react-router-dom";
 
@@ -25,30 +24,29 @@ function Header() {
 
   return (
     <header>
-      <Container>
-        <Box display="flex" gap={2} justifyContent="space-between" py={2.5}>
+      <div>
+        <div>
           <RouterLink to={"/"}>
             <img src={logo} alt="logo" />
           </RouterLink>
-
-          <Box display="flex" gap={5}>
+          <div>
             <nav>
               <ul>
-                <Box display="flex" justifyContent="flex-end" gap={5}>
+                <div>
                   {navItems.map((item) => (
                     <NavLink to={item.url}>
                       <li key={item.name}>{item.name}</li>
                     </NavLink>
                   ))}
-                </Box>
+                </div>
               </ul>
             </nav>
             <RouterLink to="/get-started">
-              <Button variant="contained">Get Started</Button>
+              <button variant="contained">Get Started</button>
             </RouterLink>
-          </Box>
-        </Box>
-      </Container>
+          </div>
+        </div>
+      </div>
     </header>
   );
 }

@@ -1,9 +1,3 @@
-import {
-  Box,
-  Button,
-  Container,
-  Typography,
-} from "@mui/material";
 import React from "react";
 import Layout from "../components/Layout";
 import './pages.css'
@@ -11,57 +5,37 @@ import './pages.css'
 function Home() {
   return (
     <Layout>
-      <Box component="section" className="banner-section">
-      <Container >
-        <Box 
-          display="flex" 
-          justifyContent={"space-between"} 
-          py={12}
-          gap={6}
-        >
-
-          <Box className="banner-left">
-            <Typography variant="h1">Fundraising Made Easy!</Typography>
-            <Typography>
+      <div component="section" className="banner-section">
+      <div>
+        <div>
+          <div className="banner-left">
+            <h1>Fundraising Made Easy!</h1>
+            <p>
               Let us manage your next fundraising campaign with our Canada-wide
               online 50/50s or Chase the Ace software. Supporters can play from
               anywhere in the country.
-            </Typography>
-            <Button>Start Today!</Button>
-          </Box>
-
-          <Box className="banner-right">
-            <Box className="banner-card">
-              <Box 
-                display="flex"
-                justifyContent={"space-between"}
-              >
-                <Typography>Current 50/50 Jackpot</Typography>
-                <Typography>$<span>70</span></Typography>
-
-              </Box>
-
-              <Typography variant="h2">
-                The Lotto Factory Six Nations Veterans Association
-              </Typography>
-
-              <Box
-                display="flex"
-                justifyContent={"space-between"}
-              >
-                <Box>
-                  <Typography>Funds Raised till now</Typography>
-                  <Typography>$4,080,769</Typography>
-                </Box>
-
-                <Button>Buy Tickets</Button>
-              </Box>
-            </Box>
-          </Box>
-
-        </Box>
-      </Container>
-      </Box>
+            </p>
+            <button>Start Today!</button>
+          </div>
+          <div className="banner-right">
+            <div className="banner-card">
+              <div>
+                <p>Current 50/50 Jackpot</p>
+                <p>$<span>70</span></p>
+              </div>
+              <h2>The Lotto Factory Six Nations Veterans Association</h2>
+              <div>
+                <div>
+                  <p>Funds Raised till now</p>
+                  <p>$4,080,769</p>
+                </div>
+                <button>Buy Tickets</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
     </Layout>
   );
 }
