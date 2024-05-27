@@ -24,21 +24,20 @@ function Header() {
 
   return (
     <header>
-      <div>
-        <div>
+      <div className="container mx-auto">
+        <div className="flex flex-row justify-between">
           <RouterLink to={"/"}>
             <img src={logo} alt="logo" />
           </RouterLink>
-          <div>
+
+          <div className="flex flex-row">
             <nav>
-              <ul>
-                <div>
-                  {navItems.map((item) => (
-                    <NavLink to={item.url}>
-                      <li key={item.name}>{item.name}</li>
-                    </NavLink>
-                  ))}
-                </div>
+              <ul className="flex flex-row">
+                {navItems.map((item) => (
+                  <NavLink to={item.url}>
+                    <li key={item.name}>{item.name}</li>
+                  </NavLink>
+                ))}
               </ul>
             </nav>
             <RouterLink to="/get-started">

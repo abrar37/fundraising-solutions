@@ -4,12 +4,7 @@ import logo from './../../assets/logo-light.svg'
 function Footer() {
   return (
     <footer>
-      <div
-        py={10}
-        sx={{
-          bgcolor: "primary.main",
-        }}
-      >
+      <div className="container mx-auto">
         <div>
           <div>
             <div>
